@@ -43,7 +43,7 @@ app.set('view engine','ejs')
 
 app.use(morgan('dev'))
 // app.use(morgan('tiny'))
-app.use(express.static('public'))
+app.use(express.static('public'))//makes the public folder static(accessible)
 
 // mongoose and mongo sandbox routes
 app.get('/add-blog',(req,res)=>{
